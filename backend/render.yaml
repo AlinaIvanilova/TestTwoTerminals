@@ -1,7 +1,8 @@
 services:
   - type: web
     runtime: ruby
-    name: sinatra-backend # Вигадайте унікальну назву, напр., sinatra-backend
+    name: sinatra-backend
     plan: free
+    rootDir: backend          # ← ОСЬ ЦЕ ГОЛОВНЕ ВИПРАВЛЕННЯ
     buildCommand: bundle install
     startCommand: bundle exec rackup -p $PORT
