@@ -4,7 +4,11 @@ require 'rack/cors'
 # Налаштування CORS
 use Rack::Cors do
   allow do
-    origins 'http://localhost:8080'  # дозволяємо запити з фронтенду
+    # ⬇️ ЗАМІНІТЬ на URL вашого фронтенд-сервісу на Render
+    # Можна додати кілька origin через кому:
+    origins 'http://localhost:8080',
+            'https://sinatra-frontend-pxfn.onrender.com'
+
     resource '*',
              headers: :any,
              methods: [:get, :post, :options]
