@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
     });
 });
 
-const PORT = 8080;
-server.listen(PORT, () => {
-    console.log(`Сервер запущено на http://localhost:${PORT}`);
+const PORT = process.env.PORT || 8080;
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Сервер запущено на порту ${PORT}`);
 });
