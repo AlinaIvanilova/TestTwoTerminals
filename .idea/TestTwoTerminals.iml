@@ -23,5 +23,6 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, ruby-3.3.10-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v4.2.1, ruby-3.3.10-p183) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.7.0, ruby-3.3.10-p183) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webrick (v1.9.2, ruby-3.3.10-p183) [gem]" level="application" />
   </component>
 </module>

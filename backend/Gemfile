@@ -3,3 +3,4 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'rack-cors'
 gem 'rackup'   # необов'язково, але зручно для запуску
+gem 'webrick'   # ← додайте цей рядок
