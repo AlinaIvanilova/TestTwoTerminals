@@ -3,7 +3,7 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
     resultElement.textContent = 'Завантаження...';
 
     try {
-        const response = await fetch('http://localhost:4567/hello');
+        const response = await fetch('https://PROBA.onrender.com/hello');
         if (!response.ok) throw new Error('Помилка HTTP: ' + response.status);
         const data = await response.json();
         resultElement.textContent = data.message;

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    runtime: node
+    name: sinatra-frontend # Напр., sinatra-frontend
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
